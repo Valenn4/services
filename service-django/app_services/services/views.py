@@ -13,7 +13,7 @@ def home(request):
 def search(request, job):
     context = {
         'job': job,
-        'services': Service.objects.filter(category=job)
+        'services': Service.objects.filter(category=Job.objects.get(name_job=job))
     }
     return render(request, 'search.html', context)
 
