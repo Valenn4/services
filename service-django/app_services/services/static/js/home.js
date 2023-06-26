@@ -41,3 +41,9 @@ document.querySelector(".input_search").addEventListener("keyup", () => {
     })
 })
 
+/* click en recomendaciones */
+document.querySelectorAll(".recommendation").forEach(el => {
+    el.addEventListener("click", () => {
+        window.location.href = '/search/'+el.id
+    })
+})
