@@ -1,0 +1,58 @@
+{% load static %}
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="{% static 'css/searchhh.css' %}">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&family=Poppins:wght@400;500;600&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+      </head>
+      <body>
+        <div class="component">
+          <div class="init">
+            <a href="/">
+                <span class="material-symbols-outlined">
+                keyboard_backspace
+                </span>
+            </a>
+            <p><a href="/">Volver al inicio</a></p>
+          </div>
+          <h1 class="title">57 coincidencias sobre {{job}}</h1>
+          <div class="filters">
+            <div class="filter">
+              <p>Filtrar por:</p>
+              <select>
+                <option><p>Determinado</p></option>
+                <option><p>Precios ascendente</p></option>
+                <option><p>Precios descendente</p></option>
+                <option><p>Valoracion ascendente</p></option>
+                <option><p>Valoracion descendente</p></option>
+              </select>
+            </div>
+          </div>
+          {% for service in services %}
+          <div class="service" id="{{service.id}}">
+            <img src="{{service.image}}" alt="">
+            <div class="info">
+              <div class="rating">
+                <span class="material-symbols-outlined">
+                  grade
+                  </span>
+                <p>{{service.rating}}</p>
+              </div>
+              <p class="title_service">{{service.name_service}}</p>
+              <p class="location_service">{{service.address}}</p>
+              <!--
+              <p>Horarios: {{service.schedule}}</p>
+              <p>Contacto: 3517724563</p>
+              -->
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </body>
+      <script src="{% static 'js/search.js' %}"></script>
+</html>
