@@ -19,6 +19,8 @@ class Service(models.Model):
     category = models.ForeignKey(Job, blank=False, on_delete=models.CASCADE)
     city = models.CharField(max_length=200, blank=False)
     address = models.TextField(max_length=300, blank=False)
+    latitude = models.FloatField(null= True)
+    longitude = models.FloatField(null= True)
     owner = models.CharField(max_length=200, blank=False)
     schedule = models.CharField(max_length=100, blank=False)
     image = models.TextField(max_length=500, blank=False)

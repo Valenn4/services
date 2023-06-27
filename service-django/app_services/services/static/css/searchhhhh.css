@@ -115,8 +115,8 @@
   .info {
     display: flex;
     flex-direction: column;
-    width: 95%;
-    padding: 20px;
+    width: 100%;
+    padding: 20px 15px;
     justify-content: center;
     font-family: 'Poppins';
   }
