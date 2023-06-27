@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from .models import Cordoba, Job, Service
+from geopy import *
 
 # Create your views here.
 
@@ -19,6 +20,7 @@ def search(request, job):
     return render(request, 'search.html', context)
 
 def service(request, id):
+    geopy
     context = {
         'service': Service.objects.get(id=id)
     }

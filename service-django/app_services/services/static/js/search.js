@@ -33,9 +33,9 @@ document.querySelectorAll(".service").forEach(service => {
             const distancia = radioTierra * c;
 
             if(distancia<1){
-                document.getElementsByClassName(service.id)[0].innerHTML += "menos de un km"
+                document.getElementsByClassName(service.id)[0].innerHTML = "A menos de un km"
             } else {
-                document.getElementsByClassName(service.id)[0].innerHTML += distancia.toFixed(2)+"km"
+                document.getElementsByClassName(service.id)[0].innerHTML = `A ${distancia.toFixed(2)} km`
             }
         })
     } else {
