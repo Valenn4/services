@@ -20,14 +20,16 @@
             </a>
             <p><a href="/">Volver al inicio</a></p>
           </div>
-          <h1 class="title">57 coincidencias sobre {{job}}</h1>
+          {% if count == 1 %}
+          <h1 class="title">{{count}} coincidencia sobre {{job}}</h1>
+          {% else %}
+          <h1 class="title">{{count}} coincidencias sobre {{job}}</h1>
+          {% endif %}
           <div class="filters">
             <div class="filter">
               <p>Filtrar por:</p>
               <select>
                 <option><p>Determinado</p></option>
-                <option><p>Precios ascendente</p></option>
-                <option><p>Precios descendente</p></option>
                 <option><p>Valoracion ascendente</p></option>
                 <option><p>Valoracion descendente</p></option>
               </select>

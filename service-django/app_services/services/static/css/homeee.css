@@ -100,6 +100,26 @@
     border-bottom: 1px solid rgb(0, 0, 0, .3);
     list-style: none;
   }
+  .alert_location {
+    display: none;
+    background-color: red;
+    color: white;
+    position: absolute;
+    right:20px;
+    top: 45px;
+    font-family: 'Poppins';
+    font-size: 14px;
+    padding: 5px;
+    border-radius: 5px;
+  }
+  .alert_location span {
+    color: red;
+    position: absolute;
+    top: -27px;
+    right: 0px;
+    font-size: 50px;
+    text-shadow: none;
+  }
   
   /* SUB COMPONENT */
   
@@ -217,6 +237,7 @@
     grid-gap: 20px;
   }
   .recommendation{
+    position: relative;
     width: 100%;
     height: 120px;
     filter: brightness(.8);
