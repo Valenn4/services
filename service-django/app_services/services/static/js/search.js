@@ -3,8 +3,9 @@ document.querySelectorAll(".service").forEach(service => {
         window.location.href = '/service/'+service.id
     })
     const name_service = service.childNodes[3].childNodes[3].textContent    
+
     if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(function (position) {
+        navigator.geolocation.watchPosition(function (position) {
             const coordenadas_service = document.getElementsByClassName(service.id)[0].id.split(' ')
             const lat1 = position.coords.latitude;
             const lon1 = position.coords.longitude;
