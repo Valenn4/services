@@ -106,7 +106,7 @@
     color: white;
     position: absolute;
     right:20px;
-    top: 45px;
+    top: 50px;
     font-family: 'Poppins';
     font-size: 14px;
     padding: 5px;
@@ -115,7 +115,7 @@
   .alert_location span {
     color: red;
     position: absolute;
-    top: -27px;
+    top: -22px;
     right: 0px;
     font-size: 50px;
     text-shadow: none;
