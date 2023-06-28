@@ -6,6 +6,7 @@
     background-color: whitesmoke;
   }
   .component{
+    background-image: linear-gradient( 109.6deg,  rgba(61,131,97,1) 11.2%, rgba(28,103,88,1) 91.1% );
     /*background-image: url('/static/images/rafael-atantya-ZFI1Gz72bx4-unsplash.jpg');*/
     background-position: center;
     background-size: cover;
@@ -26,7 +27,7 @@
     cursor: pointer;
   }
   .init a {
-    color:rgba(61,131,97,1);
+    color:white;
     /*color: rgb(39, 39, 39);*/
   }
   .init p {
@@ -41,7 +42,8 @@
   
   .title {
     font-size: 21px;
-    color: rgb(39, 39, 39);
+    color:white;
+    /*color: rgb(39, 39, 39);*/
     width: 90%;
     font-family: 'Poppins';
     margin: auto;
@@ -60,6 +62,7 @@
     display: flex;
     flex-direction: row;
     font-family: 'Belanosima';
+    color: white;
   }
   select::-ms-expand {
     display: none;
@@ -73,6 +76,7 @@
     font-size: 17px;
     font-family: 'Belanosima';
     cursor: pointer;
+    color: white;
   }
   .filter select:focus{
     outline: none;
@@ -89,6 +93,7 @@
     align-items: center;
     cursor: pointer;
     border-bottom: 1.5px solid rgb(0, 0, 0, .4);
+    color: whitesmoke;
   }
   .rating {
     display: flex;
