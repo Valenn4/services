@@ -62,10 +62,33 @@
 
 .schedules, .contacts, .info_owner {
     border-bottom: 1px solid rgb(0, 0, 0, .5);
-    padding: 5px 0px;
+    padding: 20px 0px 15px 0;
 }
-.schedules .schedule_title, .contacts .contact_title, .info_owner .owner_title {
+.schedules {
+    padding: 5px 0 15px 0;
+}
+.schedule_title, .contact_title, .owner_title, .galery_title {
     font-size: 17px;
     font-weight: bold;
     text-decoration: underline;
+}
+
+.galery {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 0 15px;
+    font-family: 'Poppins';
+    padding-bottom: 60px;
+}
+.pics {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15px 10px;
+    margin-top: 10px;
+}
+.pics img {
+    width: 100%;
+    height: 160px;
+    border-radius: 10px;
 }
