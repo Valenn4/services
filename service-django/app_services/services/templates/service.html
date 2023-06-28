@@ -6,7 +6,7 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="{% static 'css/servicee.css' %}">
+        <link rel="stylesheet" href="{% static 'css/service.css' %}">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&family=Poppins:wght@400;500;600&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
@@ -23,17 +23,28 @@
                 </a>
             </div>
             <div class="info">
-                <div class="rating">
-                    <span class="material-symbols-outlined">
-                        grade
-                        </span>
-                    <p>{{service.rating}}</p>
+                <div class="first">
+                    <p class="title_service">{{service.name_service}}</p>
+                    <div class="rating">
+                        <span class="material-symbols-outlined">
+                            grade
+                            </span>
+                        <p>{{service.rating}}</p>
+                    </div>
                 </div>
-                <p class="title_service">{{service.name_service}}</p>
                 <p class="location_service">{{service.address}}</p>
-                <p class="schedule">Horarios: {{service.schedule}}</p>
-                <p class="contact">Contacto: 3517724563</p>
-                <p class="owner">Dueño: {{service.owner}}</p>
+                <div class="schedules">
+                    <p class="schedule_title">Horarios</p>
+                    <p class="schedule">{{service.schedule}}</p>
+                </div>
+                <div class="contacts">
+                    <p class="contact_title">Contacto</p>
+                    <p class="contact">Telefono: 3517724563</p>
+                </div>
+                <div class="info_owner">
+                    <p class="owner_title">Datos del dueño</p>
+                    <p class="owner">Nombre: {{service.owner}}</p>
+                </div>
             </div>
         </div>
     </body>

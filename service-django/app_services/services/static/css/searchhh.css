@@ -91,7 +91,7 @@
     margin: auto;
     align-items: center;
     cursor: pointer;
-    border-bottom: 1.5px solid rgb(0, 0, 0, .5);
+    border-bottom: 1.5px solid rgb(0, 0, 0, .3);
     color: whitesmoke;
   }
   .rating {
