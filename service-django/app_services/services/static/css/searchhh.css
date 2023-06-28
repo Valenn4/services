@@ -55,7 +55,6 @@
     width: 90%;
     margin: auto;
     margin-top: 15px;
-    margin-bottom: 10px;
   }
   .filter{
     width: auto;
@@ -88,16 +87,12 @@
   .service{
     display: flex;
     flex-direction: row;
-    width: 82%;
+    width: 90%;
     margin: auto;
     align-items: center;
     cursor: pointer;
-    color: black;
-    background-color: white;
-    padding: 0 15px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    box-shadow: 1px 1px 4px rgb(0, 0, 0, .4);
+    border-bottom:  1px solid rgb(0, 0, 0, .2);
+    color: white;
   }
   .rating {
     display: flex;
