@@ -22,10 +22,10 @@
     display:flex;
     flex-direction: center;
     width:100%;
-    height:9%;
+    height:12%;
   }
   .title {
-    width:45%;
+    width:auto;
     display: flex;
     text-align: center;
     color: white;
@@ -33,30 +33,30 @@
     font-family: 'Poppins';
     font-weight: bolder;
     align-items:center;
-    margin-left: 20px;
-  }
-  .title p {
-    margin-left: 5px;
+    margin: 5% 6%;
   }
   .maps {
-    width:55%;
+    width:100%;
     display: flex;
     justify-content: flex-end;
     color: white;
     font-family: sans-serif;
     font-weight: bolder;
-    font-size: 14px;
+    font-size: 16px;
     align-items:center;
-    margin-right: 10px;
+    margin-right: 15px;
     cursor: pointer;
   }
   .maps p {
-    margin-right: 5px;
+    margin-right: 3px;
   }
   
   .actually_location{
     display: flex;
     align-items: center;
+  }
+  .actually_location span {
+    font-size: 25px;
   }
   .maps_options {
     display: none;
@@ -104,7 +104,7 @@
     color: white;
     position: absolute;
     right:20px;
-    top: 50px;
+    top: 65px;
     font-family: 'Poppins';
     font-size: 14px;
     padding: 5px;
@@ -125,7 +125,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 84%;
+    height: 78%;
     margin: auto;
     text-align: center;
     align-items: center;
@@ -272,7 +272,7 @@
     display: flex;
     flex-direction: row;
     width: 100%;
-    height: 8%;
+    height: 10%;
     background-color: black;
     color: white;
     justify-content: center;
