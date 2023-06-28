@@ -92,13 +92,12 @@
     margin: auto;
     align-items: center;
     cursor: pointer;
-    border: 1.5px solid rgb(0, 0, 0, .4);
     color: black;
     background-color: white;
     padding: 0 15px;
     margin-bottom: 20px;
-    border-radius: 10px;
-    box-shadow: 1px 1px 2px rgb(0, 0, 0, .4);
+    border-radius: 5px;
+    box-shadow: 1px 1px 4px rgb(0, 0, 0, .4);
   }
   .rating {
     display: flex;
