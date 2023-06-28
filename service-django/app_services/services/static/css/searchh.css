@@ -26,7 +26,8 @@
     cursor: pointer;
   }
   .init a {
-    color: rgb(39, 39, 39);
+    color:rgba(61,131,97,1);
+    /*color: rgb(39, 39, 39);*/
   }
   .init p {
     margin-left: 3px;
